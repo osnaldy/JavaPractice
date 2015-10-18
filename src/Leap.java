@@ -7,7 +7,7 @@ public class Leap {
 		int start = key.nextInt();
 		System.out.print("Enter the final year: ");
 		int finish = key.nextInt();
-		
+			
 		while (start <= finish) {
 			if (start % 4 == 0 && start % 100 != 0 || start % 400 == 0){
 				System.out.println(start + " This is a Leap Year");
@@ -16,9 +16,15 @@ public class Leap {
 			else {
 				System.out.println(start + " This is not a leap year");
 				start++;
+				key.close();
+			
 			}	
-		}
+		
+			}
 	}
+
 }
+
+
 
 	
